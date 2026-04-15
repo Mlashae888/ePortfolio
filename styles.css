@@ -1,80 +1,38 @@
-/* GENERAL STYLING */
 body {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     background: linear-gradient(to right, #e3f2fd, #ffffff);
-     color: #333;
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
 }
 
-/* HEADER */
-header {
-   text-align: center;
-   padding: 20px;
-   background-color: #0077cc;
-   color: white;
+.about {
+padding: 20px;
+text-align: center;
 }
 
-/* NAVIGATION */
-nav {
-    background-color: #005fa3;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-     text-decoration: underline;
-}
-
-/* MAIN CONTENT */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* PROFILE IMAGE */
 .profile-img {
-    width: 200px;
-    border-radius: 50%;
-    margin: 20px 0;
-    border: 3px solid #0077cc;
+max-width: 100%:
+height: auto;
+border-radius: 10px;
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0077cc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
+@media screen and (max-width: 768px) {
+nav ul {
+display: flex;
+flex-direction: column;
+text-align: center:
 }
 
-.btn:hover {
-     background-color: #005fa3;
+.about {
+padding: 10px;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #0077cc;
-  color: white;
-  margin-top: 20px;
+.profile-img {
+width: 80%;
+}
+}
+
+.about {
+display: flex;
+flex-direction: column;
+align-items: center:
 }
